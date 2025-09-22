@@ -4,11 +4,16 @@
 body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter, sans-serif;line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 .header{position:sticky;top:0;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);z-index:50}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.brand{font-weight:800;display:flex;align-items:center;gap:8px}
+.header .navbar{padding:12px 0}
+.header .navbar-brand.brand{font-weight:800;display:flex;align-items:center;gap:8px;color:var(--fg);text-decoration:none}
+.header .navbar-brand.brand:hover{color:var(--fg)}
+.header .navbar-nav.links{gap:12px;font-weight:600;color:#cfd3da}
+.header .navbar-nav .nav-link{color:#cfd3da;font-weight:600;transition:color 0.3s ease}
+.header .navbar-nav .nav-link:hover{color:var(--gold)}
+.header .navbar-nav .nav-link.active{color:var(--gold)}
+.header .navbar-toggler{border-color:rgba(255,255,255,.2)}
+.header .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}
 .brand .dot{width:10px;height:10px;background:var(--ruby);border-radius:50%}
-.links a{margin:0 12px;color:#cfd3da;text-decoration:none;font-weight:600}
-.links a.active{color:var(--gold)}
 .btn{padding:12px 22px;background:var(--gold);border-radius:30px;color:#111;font-weight:800;display:inline-flex;align-items:center;gap:8px}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--fg)}
 .hero{padding:100px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}

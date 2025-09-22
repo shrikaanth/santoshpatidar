@@ -4,25 +4,88 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="author" content="Dr. Santosh Patidar"/>
+  <meta name="keywords" content="Dr. Santosh Patidar, business coach, motivational speaker, leadership training, corporate coaching, India"/>
+  <meta name="theme-color" content="#F2D24B"/>
+  <meta name="msapplication-TileColor" content="#0B0B0D"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Dr. Santosh Patidar"/>
+  
   <title>Believe in your vision — Dr. Santosh Patidar</title>
-  <meta name="description" content="Fueling growth through clarity and courage. From classrooms to boardrooms, shaping unstoppable leaders.">
+  <meta name="description" content="Fueling growth through clarity and courage. From classrooms to boardrooms, shaping unstoppable leaders. India's most trusted business coach and motivational speaker.">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Believe in your vision — Dr. Santosh Patidar"/>
+  <meta property="og:description" content="Fueling growth through clarity and courage. From classrooms to boardrooms, shaping unstoppable leaders. India's most trusted business coach and motivational speaker."/>
+  <meta property="og:url" content="https://santoshpatidar.com"/>
+  <meta property="og:site_name" content="Dr. Santosh Patidar"/>
+  <meta property="og:image" content="https://santoshpatidar.com/assets/hero-cutout.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Dr. Santosh Patidar speaking on stage"/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Believe in your vision — Dr. Santosh Patidar"/>
+  <meta name="twitter:description" content="Fueling growth through clarity and courage. From classrooms to boardrooms, shaping unstoppable leaders."/>
+  <meta name="twitter:image" content="https://santoshpatidar.com/assets/hero-cutout.png"/>
+  <meta name="twitter:image:alt" content="Dr. Santosh Patidar speaking on stage"/>
+  
+  <!-- Additional Meta Tags -->
+  <link rel="canonical" href="https://santoshpatidar.com"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
   <header class="header">
-    <div class="container nav">
-      <div class="brand"><span class="dot"></span> Dr. Santosh Patidar</div>
-      <nav class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Programs</a>
-        <a href="#">Events</a>
-        <a href="#">Podcast</a>
-        <a href="#" class="btn ghost">Start Now</a>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand brand" href="#">
+          <span class="dot"></span> Dr. Santosh Patidar
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto links">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Podcast</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn ghost ms-2">Start Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <section class="hero">
@@ -136,10 +199,12 @@
   </section>
 
   <footer>
-    © <span id="y"></span> Dr. Santosh Patidar — Built with GSAP, crafted for impact.
+    © <span id="y"></span> Dr. Santosh Patidar. All rights reserved. Made with ❤️ by The Technogen.
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
