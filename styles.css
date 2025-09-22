@@ -100,7 +100,15 @@ a{color:inherit;text-decoration:none}
 .hero .inner{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center; padding:40px 0}
 @media (max-width:900px){
   .hero .inner{grid-template-columns:1fr; text-align:center}
-  .hero-figure{display:none}
+  .hero-figure{display:none !important; visibility:hidden !important; opacity:0 !important}
+  .hero .hero-figure{display:none !important; visibility:hidden !important; opacity:0 !important}
+  .hero .hero-figure img{display:none !important; visibility:hidden !important; opacity:0 !important}
+}
+
+@media (max-width:768px){
+  .hero-figure{display:none !important; visibility:hidden !important; opacity:0 !important}
+  .hero .hero-figure{display:none !important; visibility:hidden !important; opacity:0 !important}
+  .hero .hero-figure img{display:none !important; visibility:hidden !important; opacity:0 !important}
 }
 
 .h1{
