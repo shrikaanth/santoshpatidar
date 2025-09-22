@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--bg:#0B0B0D;--fg:#F7F7FA;--gold:#F2D24B;--ruby:#C21F30;--silver:#C9CDD3;--ink:#111217;--muted:#8C8F98}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter, sans-serif;line-height:1.6}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.header{position:sticky;top:0;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{font-weight:800;display:flex;align-items:center;gap:8px}
+.brand .dot{width:10px;height:10px;background:var(--ruby);border-radius:50%}
+.links a{margin:0 12px;color:#cfd3da;text-decoration:none;font-weight:600}
+.links a.active{color:var(--gold)}
+.btn{padding:12px 22px;background:var(--gold);border-radius:30px;color:#111;font-weight:800;display:inline-flex;align-items:center;gap:8px}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--fg)}
+.hero{padding:100px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
+.hero img{max-width:460px;border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,.4)}
+.h1{font-family:"DM Serif Display", serif;font-size:clamp(36px,5vw,64px);line-height:1.1}
+.sub{margin-top:12px;font-size:18px;color:#d0d4db}
+.section{padding:80px 0;border-top:1px solid rgba(255,255,255,.08)}
+.section.alt{background:#111217}
+.sec-heading{font-family:"DM Serif Display", serif;font-size:clamp(28px,4vw,48px);margin-bottom:22px}
+.lead{color:#cfd3da;max-width:900px}
+.bullet-list{margin-top:20px;color:#e1e4eb}
+.bullet-list li{margin-bottom:10px}
+.image-strip{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+.image-strip img{width:32%;border-radius:12px;object-fit:cover}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.gallery img{width:100%;border-radius:12px;object-fit:cover}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.card{background:#18191f;padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,.1)}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.pill{padding:12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.05);color:#fff;font-weight:600;text-align:center}
+.final-cta{text-align:center;padding:100px 0;background:radial-gradient(circle at top left, rgba(242,210,75,.15), transparent), #0a0a0c}
+footer{text-align:center;padding:40px 0;font-size:14px;color:#aeb3bb;border-top:1px solid rgba(255,255,255,.06)}
